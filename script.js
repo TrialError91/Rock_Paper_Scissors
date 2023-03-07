@@ -50,3 +50,15 @@ for (let i = 0; i < 5; i++) {
     console.log(playRound(userChoice, computerChoice))
     console.log(`Computer score: ${computerScore} // User score: ${userScore}`)
 };
+
+function compareScores (userScore, computerScore) {
+    if (userScore>computerScore) {
+        console.log("You won!")
+    } else if (userScore<computerScore) {
+        console.log("You lost!")
+    } else {
+        console.log("It's a draw")
+    }
+}
+
+compareScores(userScore, computerScore)
