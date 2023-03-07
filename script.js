@@ -12,3 +12,13 @@ function checkUserChoice() {
 
 let userScore = 0
 let computerScore = 0
+
+const choices = ["rock", "paper", "scissors"]
+userChoice=getUserChoice()
+userChoice=userChoice.toLowerCase()
+checkUserChoice()
+while (checkUserChoice()==false) {
+    userChoice=getUserChoice()
+    userChoice=userChoice.toLowerCase()
+    checkUserChoice()
+};
