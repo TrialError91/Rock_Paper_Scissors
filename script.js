@@ -35,22 +35,16 @@ function getComputerChoice() {
 function compare() {
     if (computerChoice == userInput) {
         roundPara.textContent=`You chose ${userInput}, computer chose ${computerChoice}: it's a draw!`
-        console.log(userScore)
-        console.log(computerScore)
         userScorePara.textContent=`User score: ${userScore}`
         computerScorePara.textContent=`Computer score: ${computerScore}`
     } else if ((computerChoice == 'rock' && userInput == 'paper') || (computerChoice == 'paper' && userInput == 'scissors') || (computerChoice == 'scissors' && userInput == 'rock')) {
         userScore += 1
         roundPara.textContent=`You chose ${userInput}, computer chose ${computerChoice}: you win this round!`
-        console.log(userScore)
-        console.log(computerScore)
         userScorePara.textContent=`User score: ${userScore}`
         computerScorePara.textContent=`Computer score: ${computerScore}`
     } else {
         computerScore += 1
         roundPara.textContent=`You chose ${userInput}, computer chose ${computerChoice}: the computer wins this round!`
-        console.log(userScore)
-        console.log(computerScore)
         userScorePara.textContent=`User score: ${userScore}`
         computerScorePara.textContent=`Computer score: ${computerScore}`
     }
